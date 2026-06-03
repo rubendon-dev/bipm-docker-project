@@ -4,6 +4,8 @@
 #
 #    pip-compile --output-file=app/requirements.txt app/requirements.in
 #
+async-timeout==5.0.1
+    # via redis
 blinker==1.9.0
     # via flask
 click==8.1.8
@@ -21,6 +23,8 @@ markupsafe==3.0.3
     #   flask
     #   jinja2
     #   werkzeug
+redis==7.0.1
+    # via -r app/requirements.in
 werkzeug==3.1.8
     # via flask
 zipp==3.23.1
